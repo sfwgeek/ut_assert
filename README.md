@@ -33,12 +33,12 @@ Python 3.11+
 
 ## Unix/macOS
 ```console
-$ python3 -m pip install "TODO"
+$ python3 -m pip install "ut_assert"
 ```
 
 ## Windows
 ```console
-C:\> py -m pip install "TODO"
+C:\> py -m pip install "ut_assert"
 ```
 
 
@@ -193,3 +193,51 @@ https://go.dev/doc/tutorial/add-a-test
 
 ## Rust
 https://doc.rust-lang.org/book/ch11-01-writing-tests.html
+
+
+# Build
+## Setup Python Virtual Environment
+
+https://docs.python.org/3/tutorial/venv.html
+
+## Commands
+
+### OS System Python Version
+
+`py -m venv C:\apps\ut_assert\.venv`
+
+
+## Specifc Python Version
+
+`C:\path\to\pyver\python.exe -m venv C:\apps\ut_assert\.venv`
+
+For example: `C:\Python311\python.exe -m venv C:\apps\ut_assert\.venv`
+
+
+## Activate Virtual Environment
+
+`C:\apps\ut_assert> .venv\Scripts\activate`
+
+Check venv package path:
+```
+(.venv) C:\apps\ut_assert> py -m site
+sys.path = [
+    'C:\\apps\\ut_assert',
+    'C:\\Python311\\python311.zip',
+    'C:\\Python311\\DLLs',
+    'C:\\Python311\\Lib',
+    'C:\\Python311',
+    'C:\\apps\\ut_assert\\.venv',
+    'C:\\apps\\ut_assert\\.venv\\Lib\\site-packages',
+]
+USER_BASE: 'C:\\Users\\sfwgeek\\AppData\\Roaming\\Python' (doesn't exist)
+USER_SITE: 'C:\\Users\\sfwgeek\\AppData\\Roaming\\Python\\Python311\\site-packages' (doesn't exist)
+ENABLE_USER_SITE: False
+```
+
+## _Deactivate Virtual Environment_
+
+```
+(.venv) C:\apps\ut_assert>.venv\Scripts\deactivate.bat
+C:\apps\ut_assert>
+```
