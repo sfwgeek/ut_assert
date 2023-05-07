@@ -1,0 +1,35 @@
+# https://toml.io/en
+# https://packaging.python.org/en/latest/specifications/declaring-project-metadata/#declaring-project-metadata
+[project]
+name = 'ut_assert'
+description = 'Basic Python package wrapping unittest module assertions'
+readme = 'README.md'
+requires-python = '>=3.11'
+license = 'MIT'
+dependencies = [
+]
+
+# https://pypi.org/classifiers
+classifiers = [
+    'Development Status :: 1 - Planning',
+    #'Framework :: Pytest',
+    'Intended Audience :: Developers',
+    'Intended Audience :: Education',
+    'Intended Audience :: Information Technology',
+    'Intended Audience :: System Administrators',
+    'License :: OSI Approved :: MIT License',
+    'Natural Language :: English',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: Implementation :: CPython',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3 :: Only',
+    'Programming Language :: Python :: 3.11',
+    'Topic :: Education',
+    'Topic :: Education :: Testing',
+    'Topic :: Software Development :: Libraries',
+    'Topic :: Software Development :: Libraries :: Python Modules',
+    'Topic :: Software Development :: Testing',
+    'Topic :: Software Development :: Testing :: Unit',
+    'Topic :: Utilities',
+]
